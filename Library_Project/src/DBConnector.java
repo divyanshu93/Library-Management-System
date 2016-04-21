@@ -31,81 +31,7 @@ public class DBConnector {
 
 	}
 
-	// public void insert(String userName, String fileName , byte[] encFileKey,
-	// byte[] encHashKey,String hashValue,String doubleHashPass) throws
-	// SQLException{
-	//// String query=new String("select * from keystore");
-	//// rs=stmt.executeQuery(query);
-	//// while(rs.next()){
-	//// System.out.println("ID: "+rs.getString(1)+" NAME "+rs.getString(2));
-	//// }
-	// PreparedStatement p = conn.prepareStatement("insert into keystore
-	// values(?,?,?,?,?,?)");
-	//// Scanner sc=new Scanner(System.in);
-	//// System.out.println("Enter user= ");
-	//// String user = sc.nextLine();
-	//// System.out.println("Enter fileName= ");
-	//// String filename = sc.nextLine();
-	//// System.out.println("Enter encfilekey= ");
-	//// String encfilekey = sc.nextLine();
-	//// System.out.println("Enter enchashkey= ");
-	//// String enchashkey = sc.nextLine();
-	//// System.out.println("Enter hashvalue= ");
-	//// String hashvalue = sc.nextLine();
-	//// System.out.println("Enter doublehashpass= ");
-	//// String doublehashpass = sc.nextLine();
-	//
-	//
-	// p.setString(1, userName);
-	// p.setString(2, fileName);
-	// p.setBytes(3, encFileKey);
-	// p.setBytes(4, encHashKey);
-	// p.setString(5, hashValue);
-	// p.setString(6, doubleHashPass);
-	//
-	// p.executeUpdate();
-	//
-	//// query=new String("select * from keystore");
-	//// rs=stmt.executeQuery(query);
-	//// while(rs.next()){
-	////
-	//// System.out.println(rs.getString(1)+" "+rs.getString(2)+"
-	// "+rs.getString(3)+" "+rs.getString(4)+" "+rs.getString(5)+"
-	// "+rs.getString(6));
-	//// }
-	//
-	// }//end method
-	//
-	// public DbReturns getData(String userName,String fileName){
-	//
-	// ResultSet rs=null;
-	// String input = "select * from keystore where user= '" + userName + "' and
-	// filename = '" +fileName + "'";
-	// DbReturns obj1 =new DbReturns();
-	// try {
-	// rs= stmt.executeQuery(input);
-	// while(rs.next()){
-	// //System.out.println(Arrays.toString(b1) + "\n"+
-	// rs.getString(5)+"\n"+rs.getString(6));
-	// obj1.setUserName(rs.getString(1));
-	// obj1.setFileName(rs.getString(2));
-	// obj1.setFileEncKey(rs.getBytes(3));
-	// obj1.setHashEncKey(rs.getBytes(4));
-	// obj1.setHashValue(rs.getString(5));
-	// obj1.setHhkey(rs.getString(6));
-	//
-	// }
-	// } catch (SQLException e) {
-	// // TODO Auto-generated catch block
-	// e.printStackTrace();
-	// }
-	//
-	// return obj1;
-	//
-	//
-	// }
 
-	// adding some sample test code.
 
 	public void getData(String ISBN) {
 
@@ -126,31 +52,7 @@ public class DBConnector {
 
 	}
 
-	// public void gettable() throws IOException{
-	// File outfile=new File("out.txt");
-	// FileWriter fWriter = new FileWriter(outfile, true);
-	// PrintWriter pWriter = new PrintWriter(fWriter);
-	// ResultSet rs = null;
-	// String isbn,authors;
-	// String[] out=new String[10];
-	// String temp = "select isbn13, author from books";
-	// try{
-	// rs = stmt.executeQuery(temp);
-	// while(rs.next()){
-	// isbn=rs.getString(1);
-	// authors=rs.getString(2);
-	// out=authors.split(",");
-	//
-	// for(int i=0;i< out.length;i++){
-	//
-	// pWriter.println(isbn+","+out[i]);
-	//
-	// }
-	// }
-	// }catch(SQLException e){
-	// e.printStackTrace();
-	// }
-	// }
+	
 
 	// find book in library database
 	public ArrayList<String> getResult(String isbn, String title, String author) {
